@@ -4,12 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Hero from './components/Hero/Hero'
 import TechnicalExpertise from './sections/TechnicalExpertise/TechnicalExpertise.jsx'
+import Research from './sections/Research/Research.jsx'
 
 function App() {
   return (
     <>
       <Hero />
       <TechnicalExpertise />
+      <Research />
     </>
   );
 }

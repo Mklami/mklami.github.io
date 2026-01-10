@@ -1,0 +1,79 @@
+.research-heading {
+  padding-top: 60px;
+  padding-bottom: 40px; 
+  width: 100%;
+  background-color: black;
+}
+
+.research-title {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 385;
+    margin-bottom: 1rem; 
+}
+
+.title-description {
+    color: #888;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0; 
+    margin-bottom: 40px;
+}
+
+.research-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 20px;
+  padding-top: 0px;
+}
+
+.research-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+
+  backdrop-filter: blur(6px);
+}
+
+.research-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+  background: rgba(116, 112, 112, 0.03);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+  border-radius: 999px;
+
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #7c6cff, #3aaed8);
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e5e7eb;
+  backdrop-filter: blur(6px);
+}
