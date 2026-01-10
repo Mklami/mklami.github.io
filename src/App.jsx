@@ -5,6 +5,7 @@ import './App.css'
 import Hero from './components/Hero/Hero'
 import TechnicalExpertise from './sections/TechnicalExpertise/TechnicalExpertise.jsx'
 import Research from './sections/Research/Research.jsx'
+import Contact from './sections/Contact/Contact.jsx'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <TechnicalExpertise />
       <Research />
+      <Contact />
     </>
   );
 }

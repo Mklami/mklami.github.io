@@ -32,7 +32,7 @@
 .research-card {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
