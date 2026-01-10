@@ -11,18 +11,25 @@
     #0b0b0f;
 
   color: #e5e7eb;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  margin: 0;
 }
 
+.hero-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .hero-content {
   max-width: 800px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .btn-primary {
-  background-color: #646cff;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -30,6 +37,8 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 200ms;
+  background: linear-gradient(135deg, #7c6cff, #3aaed8);
+  box-shadow: 0 8px 24px rgba(124, 108, 255, 0.35);
 }
 
 .btn-secondary {
@@ -48,12 +57,17 @@
   letter-spacing: 0.2em;
   font-weight: 500;
   opacity: 0.7;
+  color: #8b7cf6;
+  opacity: 0.9;
 }
 
 .hero h1 {
   font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-weight: 200px;
+  margin: 0;
+  color: #F1E7F1;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
 }
 
 .hero p {
@@ -67,4 +81,47 @@
   font-family: inherit;
   font-weight: 600;
   letter-spacing: 0.01em;
+  margin: 10px;
+}
+
+.hero-subtitle p + p {
+  margin-top: 6px;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: rgba(255, 255, 255, 0.7); /* This makes the icons white/light */
+  transition: fill 0.3s ease;
+}
+
+.social-icon:hover svg {
+  fill: rgba(255, 255, 255, 1); /* Brighter on hover */
 }
